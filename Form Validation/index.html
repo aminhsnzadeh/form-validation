@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up to out company</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <main>
+        <div class="back"></div>
+        <section id="form">
+            <section class="head">
+                <h1>Signup in our Company</h1>
+                <button class="btn-primary" id="open-form">Start Signing</button>
+            </section>
+            <form action="" method="get" onsubmit="return _auth()" name="reg">
+                <section>
+                    <label for="username"><span class="bi-person-fill"></span> Username <span class="invalid">Please correct your username.</span></label>
+                    <input autocomplete="off" placeholder="Username" id="username" type="text" name="username">
+
+                    <label for="email"><span class="bi-envelope-fill"></span> Email <span class="invalid">Please correct your email.</span></label>
+                    <input autocomplete="off" placeholder="Email" id="email" type="text" name="email">
+
+                    <label for="password"><span class="bi-lock-fill"></span> Password <span class="invalid">Please correct your password.</span></label>
+                    <input autocomplete="off" placeholder="Password" id="password" type="password" name="password">
+
+                    <label for="con-password"><span class="bi-lock-fill"></span> Conform Password <span class="invalid">Password should be same with top.</span></label>
+                    <input autocomplete="off" placeholder="Conform Password" id="con-password" type="password" name="con-password">
+
+                    <label for="birth"><span class="bi-calendar"></span> Birthday <span class="invalid">Please correct your Birthday date.</span></label>
+                    <div class="birth-date">
+                        <label for="day">day :</label>
+                        <input min="1" id="day" placeholder="day" type="number" name="day">
+                        <label for="day">month :</label>
+                        <input min="1" max="12" id="month" placeholder="month" type="number" name="month">
+                        <label for="day">year :</label>
+                        <input min="1" id="year" placeholder="year" type="number" name="year">
+                    </div>
+                    <div class="agree">
+                        <input type="checkbox" name="checkterm" id="checkterm" required>
+                        <h3>I Agree with terms and conditions</h3>
+                    </div>
+                </section>
+                <div>
+                    <button class="btn-primary">Submit</button>
+                    <button class="btn-secondary">Registered ?</button>
+                </div>
+                <div class="pop-agree">Please Check terms and contitions</div>
+            </form>
+        </section>
+    </main>
+</body>
+<script src="src/js/script.js"></script>
+</html>
